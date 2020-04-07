@@ -1,0 +1,244 @@
+<html>
+    <head>
+
+    </head>
+    <style>
+
+        #PlayButton{ 
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+         }
+         #ReStartButton{ 
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+         }
+         #ColorName{ 
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            position: absolute;
+            left: 40em;
+            top: 19em;
+         }
+        #container{
+            width:500px;
+            height: 500px;
+            position: relative;
+            background-color:green;
+        }
+        #ball1,#ball2,#ball3,#ball4,#ball5,#ball6,#ball7,#ball8{
+            width:50px;
+            height: 50px;
+            position:absolute;            
+        }
+        #ball1{
+            top: 0em;
+        }
+        #ball2{
+            bottom: 0em;
+        }
+        #ball3{
+            right: 0em; 
+        }
+        #ball4{
+            bottom: 0em; 
+            right: 0;
+        }
+        #ball5{
+            left:14em; 
+            /* right: 0; */
+        }
+        #ball6{
+            bottom:0em; 
+            right: 14em; 
+        }
+
+        #ball7{
+            bottom:14em;  
+        }
+
+        #ball8{
+            bottom:14em; 
+            right: 0em; 
+        }
+
+    </style>
+    <body>
+        <button id="PlayButton" onclick="Play()">Play IT</button>
+        <button id="ReStartButton" type="button" onClick="window.location.reload();">ReStart</button><hr/>
+        <label id="ColorName">You have selected nothing</label>
+        <div id="container">
+            <div id="ball1" style="background-color: royalblue" onclick="GetColor1()"></div>
+            <div id="ball2" style="background-color: red" onclick="GetColor2()"></div>
+            <div id="ball3" style="background-color: black" onclick="GetColor3()"></div>
+            <div id="ball4" style="background-color: orchid" onclick="GetColor4()"></div>
+            <div id="ball5" style="background-color: blueviolet" onclick="GetColor5()"></div>
+            <div id="ball6" style="background-color: skyblue" onclick="GetColor6()"></div>
+            <div id="ball7" style="background-color: mediumvioletred" onclick="GetColor7()"></div>
+            <div id="ball8" style="background-color: yellow" onclick="GetColor8()"></div>
+            <hr/>
+        </div> 
+        <hr/>
+        <footer>
+            <small>&copy; Copyright 2020, Dhiraj</small>
+        </footer>
+        <script>            
+            var colName=document.getElementById("ColorName");
+            function GetColor1(){
+                var idball=document.getElementById("ball1");
+                var ballcol=idball.style.backgroundColor;
+                console.log(ballcol);
+                var str=" You have selected"+" "+ballcol;
+                //console.log(col);
+                var msg = new SpeechSynthesisUtterance(str);
+                colName.innerText=str;
+                window.speechSynthesis.speak(msg);
+                //alert(col);
+            }
+
+            function GetColor2(){
+                var idball=document.getElementById("ball2");
+                var ballcol=idball.style.backgroundColor;
+                console.log(ballcol);
+                var str="you have selected"+" "+ballcol;
+                //console.log(col);
+                var msg = new SpeechSynthesisUtterance(str);
+                colName.innerText=str;
+                window.speechSynthesis.speak(msg);
+                //alert(col);
+            }
+
+            function GetColor3(){
+                var idball=document.getElementById("ball3");
+                var ballcol=idball.style.backgroundColor;
+                console.log(ballcol);
+                var str="you have selected"+" "+ballcol;
+                //console.log(col);
+                var msg = new SpeechSynthesisUtterance(str);
+                colName.innerText=str;
+                window.speechSynthesis.speak(msg);
+                //alert(col);
+            }
+
+            function GetColor4(){
+                var idball=document.getElementById("ball4");
+                var ballcol=idball.style.backgroundColor;
+                console.log(ballcol);
+                var str="you have selected"+" "+ballcol;
+                //console.log(col);
+                var msg = new SpeechSynthesisUtterance(str);
+                colName.innerText=str;
+                window.speechSynthesis.speak(msg);
+                //alert(col);
+            }
+
+            function GetColor5(){
+                var idball=document.getElementById("ball5");
+                var ballcol=idball.style.backgroundColor;
+                console.log(ballcol);
+                var str="you have selected"+" "+ballcol;
+                //console.log(col);
+                var msg = new SpeechSynthesisUtterance(str);
+                colName.innerText=str;
+                window.speechSynthesis.speak(msg);
+                //alert(col);
+            }
+
+            function GetColor6(){
+                var idball=document.getElementById("ball6");
+                var ballcol=idball.style.backgroundColor;
+                console.log(ballcol);
+                var str="you have selected"+" "+ballcol;
+                //console.log(col);
+                var msg = new SpeechSynthesisUtterance(str);
+                colName.innerText=str;
+                window.speechSynthesis.speak(msg);
+                //alert(col);
+            }
+
+            function GetColor7(){
+                var idball=document.getElementById("ball7");
+                var ballcol=idball.style.backgroundColor;
+                console.log(ballcol);
+                var str="you have selected"+" "+ballcol;
+                //console.log(col);
+                var msg = new SpeechSynthesisUtterance(str);
+                colName.innerText=str;
+                window.speechSynthesis.speak(msg);
+                //alert(col);
+            }
+
+            function GetColor8(){
+                var idball=document.getElementById("ball8");
+                var ballcol=idball.style.backgroundColor;
+                console.log(ballcol);
+                var str="you have selected"+" "+ballcol;
+                //console.log(col);
+                var msg = new SpeechSynthesisUtterance(str);
+                colName.innerText=str;
+                window.speechSynthesis.speak(msg);
+                //alert(col);
+            }
+            function Play(){
+                var elem1=document.getElementById("ball1");
+                var elem2=document.getElementById("ball2");
+                var elem3=document.getElementById("ball3");
+                var elem4=document.getElementById("ball4");
+                var elem5=document.getElementById("ball5");
+                var elem6=document.getElementById("ball6");
+                var elem7=document.getElementById("ball7");
+                var elem8=document.getElementById("ball8");
+                var pos=0;
+                setInterval(function(){
+                    pos=pos+5;
+                    if(pos==450)
+                    {
+                        pos=0;
+                        // elem.style.background="red";
+                    }
+                    // if(pos==200)
+                    // {
+                    //     elem.style.background="yellow";
+                    // }
+                    //ball1
+                    elem1.style.top=pos+"px";
+                    elem1.style.left=pos+"px";
+                    //ball2
+                    elem2.style.bottom = pos + "px";
+                    elem2.style.left = pos + "px";
+                    //ball3
+                    elem3.style.top = pos + "px";
+                    elem3.style.right = pos + "px";
+                    //ball4
+                    elem4.style.bottom=pos+"px";
+                    elem4.style.right=pos+"px";
+                    elem5.style.top=pos+"px";
+                    //elem5.style.bottom=pos+"px";
+                    elem6.style.bottom=pos+"px";
+                    // elem6.style.top=pos+"px";
+                    elem7.style.left=pos+"px";
+                    //elem7.style.right=pos+"px";
+                    //elem8.style.bottom=pos+"px";
+                    elem8.style.right=pos+"px";
+                },40)
+            }
+        </script>        
+    </body>
+</html>
